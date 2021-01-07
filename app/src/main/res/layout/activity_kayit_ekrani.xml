@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/arka_plan"
+    tools:context=".kayitEkrani">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:text="Bakk-AL"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/baslık"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="70dp"
+                android:text="Yeni Hesap Oluşturun"
+                android:textSize="22sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/slogan"/>
+
+            <TextView
+                android:id="@+id/Ad"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Ad"
+                android:textStyle="bold"
+                android:layout_marginVertical="140dp"
+                android:textColor="@color/altbasliklar"/>
+            <EditText
+                android:id="@+id/kullanıcıAdı"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:layout_marginVertical="160dp"
+                android:textColor="@color/altbasliklar"/>
+
+            <TextView
+                android:id="@+id/Soyad"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="140dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/Ad"
+                android:layout_toRightOf="@+id/Ad"
+                android:text="Soyad"
+                android:textStyle="bold"
+                android:textColor="@color/altbasliklar"/>
+            <EditText
+                android:id="@+id/kullanıcıSoyadı"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="160dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/kullanıcıAdı"
+                android:layout_toRightOf="@+id/kullanıcıAdı"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:textColor="@color/altbasliklar"/>
+
+            <TextView
+                android:id="@+id/eposta"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="@string/eposta"
+                android:textStyle="bold"
+                android:layout_marginVertical="200dp"
+                android:textColor="@color/altbasliklar"/>
+            <EditText
+                android:id="@+id/posta"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:layout_marginVertical="220dp"
+                android:textColor="@color/altbasliklar"/>
+
+            <TextView
+                android:id="@+id/EpostaTekrar"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="200dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/eposta"
+                android:layout_toRightOf="@+id/eposta"
+                android:text="Eposta Tekrar"
+                android:textStyle="bold"
+                android:textColor="@color/altbasliklar"/>
+
+            <EditText
+                android:id="@+id/postaTekrarı"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="220dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/posta"
+                android:layout_toRightOf="@+id/posta"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/altbasliklar"/>
+
+            <TextView
+                android:id="@+id/Şifre"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Şifre"
+                android:textStyle="bold"
+                android:layout_marginVertical="260dp"
+                android:textColor="@color/altbasliklar"/>
+
+            <EditText
+                android:id="@+id/sifre"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginVertical="280dp"
+                android:textColor="@color/altbasliklar"/>
+
+            <TextView
+                android:id="@+id/ŞifreTekrar"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="260dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/Şifre"
+                android:layout_toRightOf="@+id/Şifre"
+                android:text="Şifre Tekrar"
+                android:textStyle="bold"
+                android:textColor="@color/altbasliklar"/>
+
+            <EditText
+                android:id="@+id/sifreTekrar"
+                android:layout_width="195dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="280dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_toEndOf="@+id/sifre"
+                android:layout_toRightOf="@+id/sifre"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/altbasliklar"/>
+
+            <Button
+                android:id="@+id/hesapOlustur"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="350dp"
+                android:background="@color/button_rengi"
+                android:text="Hesap Oluştur"
+                android:textStyle="bold" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/facebookButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginVertical="470dp"
+                android:enabled="false"
+                android:visibility="invisible"/>
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/googlebutton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:textStyle="bold"
+                android:layout_marginVertical="410dp" />
+
+            <Button
+                android:id="@+id/TelefonGirisi"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="510dp"
+                android:text="Telefon ile Giriş Yap"
+                android:enabled="false"
+                android:visibility="invisible"/>
+
+            <Button
+                android:id="@+id/googlebuttoncikis"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginVertical="560dp"
+                android:text="çıkıs"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginVertical="630dp"
+                android:id="@+id/logo"/>
+
+            <TextView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:layout_marginVertical="660dp"
+                android:id="@+id/deneme"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

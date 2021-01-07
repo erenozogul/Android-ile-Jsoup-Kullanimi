@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.veriekme">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.support.multidex.MultiDexApplication" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".sifremiUnuttum"
+            android:label="Şifremi Unuttum"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.KullaniciSayfasi" />
+        </activity>
+        <activity
+            android:name=".brosurler.brosurler"
+            android:label="Broşürler Otomatik Güncellenmektedir!"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.KullaniciSayfasi" />
+        </activity>
+        <activity
+            android:name=".kayitEkrani"
+            android:label="Kayit Ekrani"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.KullaniciSayfasi" />
+        </activity>
+        <activity
+            android:name=".KullaniciSayfasi"
+            android:label="Kullanıcı Sayfası"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".bahce.bahce"
+            android:label="bahce"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".kozmetik.kozmetik"
+            android:label="kozmetik"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".spor.spor"
+            android:label="spor"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".giyim.giyim"
+            android:label="giyim"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".anne.anne"
+            android:label="anne"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ev.ev"
+            android:label="ev"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".gida.gida"
+            android:label="gida"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity
+            android:name=".elektronik.elektronik"
+            android:label="elektronik"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/Theme.AppCompat.Light">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.veriekme.MainActivity" />
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+    </application>
+
+</manifest>

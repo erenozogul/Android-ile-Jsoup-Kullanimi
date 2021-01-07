@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="açık_mavi">#8FA0FA</color>
+    <color name="google">#B83B15</color>
+    <color name="button_kayit">#292D45</color>
+    <color name="arka_plan">#3B678A</color>
+    <color name="arka_plan_text">#B6DCD8</color>
+    <color name="facebook">#1A82D5</color>
+    <color name="button_rengi">#F85C51</color>
+    <color name="baslık">#F6BA06</color>
+    <color name="altbasliklar">#F4D67E</color>
+    <color name="slogan">#C88F3B</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+</resources>

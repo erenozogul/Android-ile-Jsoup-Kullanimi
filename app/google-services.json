@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "595662554292",
+    "firebase_url": "https://e-ticaret-fiyat-sorgulama.firebaseio.com",
+    "project_id": "e-ticaret-fiyat-sorgulama",
+    "storage_bucket": "e-ticaret-fiyat-sorgulama.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595662554292:android:c7053bab1b3e594e0703e1",
+        "android_client_info": {
+          "package_name": "com.example.veriekme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "595662554292-4q6g9uf990608a1ab95c66jdrl649ja1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.veriekme",
+            "certificate_hash": "05794b97c308fd713fb70694d14707c512dfccc5"
+          }
+        },
+        {
+          "client_id": "595662554292-t4a7v91miprk90bce83acuu59jqqhsph.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6n2fHGCarJelxc0HIC_qOFnDMP017xZw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "595662554292-t4a7v91miprk90bce83acuu59jqqhsph.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

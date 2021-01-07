@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <HorizontalScrollView
+        android:id="@+id/gorseller"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="-1dp"
+        android:layout_marginVertical="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/reklam1"
+                android:layout_width="410dp"
+                android:layout_height="200dp"
+                android:background="@color/white"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/reklam" />
+
+            <ImageButton
+                android:id="@+id/reklam2"
+                android:layout_width="410dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/rekklam"
+                android:scaleType="centerInside"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/reklam3"
+                android:layout_width="410dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/reklam3"
+                android:scaleType="centerInside"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/reklam4"
+                android:layout_width="410dp"
+                android:layout_height="200dp"
+                app:srcCompat="@drawable/reklam4"
+                android:scaleType="centerInside"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <ImageButton
+        android:id="@+id/AnneCocukOyuncak"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-140dp"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/anneicon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Bahce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-270dp"
+        app:srcCompat="@drawable/bahceicon"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+
+    <ImageButton
+        android:id="@+id/elektronik"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="-390dp"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/elektronikicon"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/ev"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-140dp"
+        android:layout_toEndOf="@+id/AnneCocukOyuncak"
+        android:layout_toRightOf="@+id/AnneCocukOyuncak"
+        app:srcCompat="@drawable/evicon"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/gida"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-268dp"
+        android:layout_toEndOf="@+id/AnneCocukOyuncak"
+        android:layout_toRightOf="@+id/AnneCocukOyuncak"
+        android:background="@color/white"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/gidaa"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/giyim"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-390dp"
+        android:layout_toEndOf="@+id/AnneCocukOyuncak"
+        android:layout_toRightOf="@+id/AnneCocukOyuncak"
+        app:srcCompat="@drawable/giyimikon"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/kozmetik"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-140dp"
+        android:layout_toEndOf="@+id/ev"
+        android:layout_toRightOf="@+id/ev"
+        app:srcCompat="@drawable/kozmetikicon"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/spor"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-270dp"
+        android:layout_toEndOf="@+id/ev"
+        android:layout_toRightOf="@+id/ev"
+        app:srcCompat="@drawable/spoer"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/BrosurEkrani"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/gorseller"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="-390dp"
+        android:layout_toEndOf="@+id/ev"
+        android:layout_toRightOf="@+id/ev"
+        app:srcCompat="@drawable/brosuur"
+        android:scaleType="centerInside"
+        android:background="@color/white"
+        tools:ignore="VectorDrawableCompat" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/arka_plan"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        />
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginVertical="5dp"
+        android:layout_marginStart="355dp"
+        android:layout_marginLeft="355dp"
+        app:srcCompat="@drawable/kullanici"
+        android:scaleType="centerInside"
+        android:background="@color/arka_plan"
+        android:id="@+id/KullaniciEkrani"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bak_al"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/baslık"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sifremiUnuttum"
+    android:background="@color/arka_plan">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bak_al"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:layout_marginVertical="10sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/baslık"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="80dp"
+        android:text="Şifremi Unuttum"
+        android:textSize="22sp"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+        android:textColor="@color/slogan"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textEmailAddress"
+        android:layout_marginVertical="230dp"
+        android:id="@+id/epostaSifreYolla"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="EPosta"
+        android:layout_marginVertical="210dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="340dp"
+        android:text="Şifremi Gönder"
+        android:background="@color/button_rengi"
+        android:id="@+id/sifreGonder"
+        />
+
+    <Button
+        android:id="@+id/vazgec"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginVertical="420dp"
+        android:text="Vazgeç"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>
