@@ -37,7 +37,7 @@ public class spor extends AppCompatActivity {
         adepter.AddFragment(new OutdoorGiyimFragment(),"Outdoor Giyim");
         adepter.AddFragment(new SporGiyimFragment(),"Spor Giyim");
         adepter.AddFragment(new SporcuBesinleriFragment(),"Sporcu Besinleri");
-        adepter.AddFragment(new TakımSporlarıFragment(),"Takım Sporları");
+        adepter.AddFragment(new KampMalzemeleriFragment(),"Takım Sporları");
         adepter.AddFragment(new TaraftarÜrünleriFragment(),"Taraftar Ürünleri");
         adepter.AddFragment(new ZayiflamaUrunuFragment(),"Zayıflama Ürünü");
 

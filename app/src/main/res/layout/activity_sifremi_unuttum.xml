@@ -47,21 +47,15 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginVertical="340dp"
-        android:text="Şifremi Gönder"
+        android:text="Şifremi Sıfırla"
         android:background="@color/button_rengi"
         android:id="@+id/sifreGonder"
         />
-
-    <Button
-        android:id="@+id/vazgec"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginVertical="420dp"
-        android:text="Vazgeç"
-        android:textStyle="bold"
-        />
-
-
-
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyle"
+        android:id="@+id/ProgressBar"/>
 
 </RelativeLayout>

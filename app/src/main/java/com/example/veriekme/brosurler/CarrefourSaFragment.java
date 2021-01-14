@@ -1,66 +1,79 @@
 package com.example.veriekme.brosurler;
 
+import android.app.ProgressDialog;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 
 import com.example.veriekme.R;
+import com.example.veriekme.brosurAdapter;
+import com.example.veriekme.brosurClass;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link CarrefourSaFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+
 public class CarrefourSaFragment extends Fragment {
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    public CarrefourSaFragment() {
-        // Required empty public constructor
-    }
-
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment CarrefourSaFragment.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static CarrefourSaFragment newInstance(String param1, String param2) {
-        CarrefourSaFragment fragment = new CarrefourSaFragment();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
-
+    private ArrayList<brosurClass> brosurClassArrayList = new ArrayList<brosurClass>();
+    private ListView listView;
+    private com.example.veriekme.brosurAdapter brosurAdapter;
+    private static String URL="https://www.cimri.com/brosur/carrefoursa?id=3389";
+    private ProgressDialog progressDialog;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.brosur_carrefour_sa, container, false);
+        View view =  inflater.inflate(R.layout.brosur_carrefour_sa, container, false);
+        listView = (ListView)view.findViewById(R.id.listview_news);
+        new VeriGetir().execute();
+
+        return view;
+    }
+    private class VeriGetir extends AsyncTask<Void,Void,Void> {
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+        }
+        @Override
+        protected void onPostExecute(Void aVoid) {
+            super.onPostExecute(aVoid);
+            listView.setAdapter((ListAdapter) brosurAdapter);
+        }
+        @Override
+        protected Void doInBackground(Void... voids) {
+            try {
+                Document doc = Jsoup.connect(URL).timeout(30*1000).get();
+                Elements gorseller = doc.select("div[style]");
+                for (int i=0; i<gorseller.size(); i++){
+                    String imageLink = gorseller.select("div[style]").select("img").eq(i).attr("src");
+
+                    brosurClass news = new brosurClass();
+                    news.imagePath2 = imageLink;
+                    brosurClassArrayList.add(news);
+
+                    Log.i("mytag", "image:  " + imageLink);
+
+                }
+                Log.i("mytag", "items found: " + gorseller.size());
+                Log.i("mytag", "items in news List: " + brosurClassArrayList.size());
+                brosurAdapter = new brosurAdapter(getActivity(), brosurClassArrayList);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
 }

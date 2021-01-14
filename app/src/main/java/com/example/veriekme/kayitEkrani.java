@@ -127,6 +127,7 @@ public class kayitEkrani extends AppCompatActivity {
                 createNewAccount();
             }
         });
+
         signInButton = findViewById(R.id.googlebutton);
         googlecikis = findViewById(R.id.googlebuttoncikis);
 

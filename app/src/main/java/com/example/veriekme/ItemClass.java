@@ -5,6 +5,5 @@ public class ItemClass {
     public String UrunBaslik;
     public String fiyatlar;
     public String imagePath;
-    public String goruntu;
 
 }

@@ -7,6 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
@@ -42,7 +43,6 @@ public class ItemAdapter extends BaseAdapter {
         if(view == null){
             view = View.inflate(context, R.layout.listview_gorunum, null);
         }
-
         ItemClass currentNews = newsList.get(i);
 
         ImageView iv1 = (ImageView) view.findViewById(R.id.imageview_1);
@@ -50,7 +50,7 @@ public class ItemAdapter extends BaseAdapter {
         TextView tvDate = (TextView) view.findViewById(R.id.textview_2);
         TextView tvDescription = (TextView) view.findViewById(R.id.textview_3);
 
-        Picasso.get().load(currentNews.imagePath).placeholder(R.drawable.placeholder).into(iv1);
+        Picasso.get().load("https:"+ currentNews.imagePath).placeholder(R.drawable.placeholder).into(iv1);
         tvTitle.setText(currentNews.UrunBaslik);
         tvDate.setText(currentNews.fiyatlar);
 

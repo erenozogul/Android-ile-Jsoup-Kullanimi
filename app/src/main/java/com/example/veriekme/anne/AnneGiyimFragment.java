@@ -59,28 +59,21 @@ public class AnneGiyimFragment extends Fragment {
                 Document doc = Jsoup.connect(URL).timeout(30*1000).get();
                 Elements oyunadi = doc.select("h3[title]");
                 Elements fiyatlar = doc.select("div.top-offers");
-                Elements gorseller = doc.select("img.s51lp5-0");
+                Elements gorseller = doc.select("div.z7ntrt-0");
                 for (int i=0; i<oyunadi.size(); i++){
                     String title = oyunadi.get(i).text();
                     String feyatlar = fiyatlar.get(i).text();
-
-                    String gorseldeneme = gorseller.select("img.s51lp5-0")
-                            .select("img")
-                            .eq(i)
-                            .attr("src");
-
+                    String imageLink = gorseller.select("div.m50b2p-0.iHtcZy").select("img").eq(i).attr("data-src");
 
                     ItemClass news = new ItemClass();
                     news.UrunBaslik = title;
                     news.fiyatlar = feyatlar;
-                    news.goruntu = gorseldeneme;
-                    news.imagePath = gorseldeneme;
+                    news.imagePath = imageLink;
                     itemClassArrayList.add(news);
 
                     Log.i("mytag", "title: " + title);
-                    //Log.i("mytag", "image:  " + imageLink);
                     Log.i("mytag", "text:  " + feyatlar);
-                    Log.i("mytag", "text:  " + gorseldeneme);
+                    Log.i("mytag", "text:  " + imageLink);
 
                 }
                 Log.i("mytag", "items found: " + oyunadi.size());

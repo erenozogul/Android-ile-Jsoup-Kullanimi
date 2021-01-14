@@ -6,6 +6,7 @@
     tools:context=".anne.AnaKucagiOtoKoltuguFragment">
 
     <ListView
+        android:layout_marginVertical="50dp"
         android:id="@+id/listview_news"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>

@@ -64,35 +64,21 @@ public class SutKahvaltilikUrunlerFragment extends Fragment {
                 Document doc = Jsoup.connect(URL).timeout(30*1000).get();
                 Elements oyunadi = doc.select("h3[title]");
                 Elements fiyatlar = doc.select("div.top-offers");
-                Elements gorseller = doc.select("img.s51lp5-0");
+                Elements gorseller = doc.select("div.z7ntrt-0");
                 for (int i=0; i<oyunadi.size(); i++){
-                    //liste.add(oyunadi.get(i).text());
-                    //liste.add(fiyatlar.get(i).text());
-
                     String title = oyunadi.get(i).text();
                     String feyatlar = fiyatlar.get(i).text();
-
-                    String gorseldeneme = gorseller.select("img.s51lp5-0")
-                            .select("img")
-                            .eq(i)
-                            .attr("src");
-
-                    //String gorsellerr = gorseller.get(i).text();
-                    //Document doc2 = Jsoup.parse(gorseldeneme);
-                    //String imageLink = doc2.getElementsByTag("img").first().attr("src");
-                    //String txt = doc2.getElementsByTag("p").text();
+                    String imageLink = gorseller.select("div.m50b2p-0.iHtcZy").select("img").eq(i).attr("data-src");
 
                     ItemClass news = new ItemClass();
                     news.UrunBaslik = title;
                     news.fiyatlar = feyatlar;
-                    news.goruntu = gorseldeneme;
-                    news.imagePath = gorseldeneme;
+                    news.imagePath = imageLink;
                     itemClassArrayList.add(news);
 
                     Log.i("mytag", "title: " + title);
-                    //Log.i("mytag", "image:  " + imageLink);
+                    Log.i("mytag", "image:  " + imageLink);
                     Log.i("mytag", "text:  " + feyatlar);
-                    Log.i("mytag", "text:  " + gorseldeneme);
 
                 }
                 Log.i("mytag", "items found: " + oyunadi.size());
