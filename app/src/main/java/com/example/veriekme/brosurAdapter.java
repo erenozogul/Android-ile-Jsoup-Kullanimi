@@ -39,7 +39,6 @@ public class brosurAdapter extends BaseAdapter {
     @Override
     public View getView(int i, View view, ViewGroup viewGroup) {
 
-        //String link = "https://cdn.cimri.io/brochure/48200";
         if(view == null){
             view = View.inflate(context, R.layout.brosur_gorunum, null);
         }

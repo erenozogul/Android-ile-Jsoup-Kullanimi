@@ -3,11 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".brosurler.BimFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".brosurler.BimFragment"
+    android:orientation="vertical">
 
-    <ListView
-        android:id="@+id/listview_news"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:srcCompat="@drawable/biim"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                app:srcCompat="@drawable/bimtu"/>
+        </LinearLayout>
+    </ScrollView>
+
 
 </LinearLayout>

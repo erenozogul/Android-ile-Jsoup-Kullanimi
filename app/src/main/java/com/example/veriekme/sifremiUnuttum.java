@@ -19,9 +19,7 @@ public class sifremiUnuttum extends AppCompatActivity {
     ProgressBar progressBar;
     EditText kullaniciEmail;
     Button sifremiSifirla;
-
     FirebaseAuth firebaseAuth;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

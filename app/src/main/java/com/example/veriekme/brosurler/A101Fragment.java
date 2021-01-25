@@ -40,10 +40,10 @@ public class A101Fragment extends Fragment {
                              Bundle savedInstanceState) {
         View view =  inflater.inflate(R.layout.brosur_a101, container, false);
         listView = (ListView)view.findViewById(R.id.listview_news);
-        new VeriGetir().execute();
+        //new VeriGetir().execute();
         return view;
     }
-    private class VeriGetir extends AsyncTask<Void,Void,Void> {
+ /*   private class VeriGetir extends AsyncTask<Void,Void,Void> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -76,5 +76,5 @@ public class A101Fragment extends Fragment {
             }
             return null;
         }
-    }
+    } */
 }

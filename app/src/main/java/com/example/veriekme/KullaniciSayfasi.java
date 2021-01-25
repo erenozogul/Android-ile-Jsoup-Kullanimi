@@ -28,9 +28,6 @@ public class KullaniciSayfasi extends AppCompatActivity {
     private FirebaseAuth auth;
     private TextView eposta,sifre;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,14 +89,6 @@ public class KullaniciSayfasi extends AppCompatActivity {
                         Intent girisIntent = new Intent(KullaniciSayfasi.this,MainActivity.class);
                         startActivity(girisIntent);
                         finish();
-
-                        posta.setVisibility(View.INVISIBLE);
-                        parola.setVisibility(View.INVISIBLE);
-                        giris.setVisibility(View.INVISIBLE);
-                        kayit.setVisibility(View.INVISIBLE);
-                        unuttum.setVisibility(View.INVISIBLE);
-                        eposta.setVisibility(View.INVISIBLE);
-                        sifre.setVisibility(View.INVISIBLE);
                     }else {
                         Toast.makeText(KullaniciSayfasi.this,"Giriş Başarısız",Toast.LENGTH_LONG).show();
                     }

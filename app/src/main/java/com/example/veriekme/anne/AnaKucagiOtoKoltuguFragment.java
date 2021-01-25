@@ -31,6 +31,7 @@ public class AnaKucagiOtoKoltuguFragment extends Fragment {
     private ItemAdapter itemAdapter;
     private static String URL="https://www.cimri.com/ana-kucagi-ve-oto-koltugu";
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,18 +43,18 @@ public class AnaKucagiOtoKoltuguFragment extends Fragment {
 
         listView = (ListView)view.findViewById(R.id.listview_news);
         new VeriGetir().execute();
-
         return view;
     }
-    private class VeriGetir extends AsyncTask<Void,Void,Void> {
+    public class VeriGetir extends AsyncTask<Void,Void,Void> {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
         }
         @Override
         protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
             listView.setAdapter((ListAdapter) itemAdapter);
+            super.onPostExecute(aVoid);
+
         }
         @Override
         protected Void doInBackground(Void... voids) {

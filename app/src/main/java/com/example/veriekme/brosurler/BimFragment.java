@@ -42,11 +42,11 @@ public class BimFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.brosur_bim, container, false);
-        listView = (ListView)view.findViewById(R.id.listview_news);
-        new VeriGetir().execute();
+        //listView = (ListView)view.findViewById(R.id.listview_news);
+        //new VeriGetir().execute();
 
         return view;
-    }
+    }/*
     private class VeriGetir extends AsyncTask<Void,Void,Void> {
         @Override
         protected void onPreExecute() {
@@ -87,4 +87,5 @@ public class BimFragment extends Fragment {
             return null;
         }
     }
+*/
 }

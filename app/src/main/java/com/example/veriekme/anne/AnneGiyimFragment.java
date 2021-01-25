@@ -31,6 +31,7 @@ public class AnneGiyimFragment extends Fragment {
     private ItemAdapter itemAdapter;
     private static String URL="https://www.cimri.com/kadin-giyim";
 
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
